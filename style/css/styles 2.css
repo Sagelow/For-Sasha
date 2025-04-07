@@ -1,0 +1,35 @@
+
+#yesButton {
+    position: absolute;
+    margin-right: -150px;
+    margin-top: 0px;
+    /* Smooth movement */
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 10px;
+    /* optional: adds some space between the buttons */
+}
+
+.btn {
+    background-color: #eba0e3;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.continue {
+    margin-left: -100px;
+}

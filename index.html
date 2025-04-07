@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Surprise !</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="./style/css/styles.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.bgimg {
+  background-image: url("https://upload-os-bbs.hoyolab.com/upload/2024/06/10/50874770/9bd439bd59faa16c1e88aa073015b33e_1369588485020455819.jpg");
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white"> 
+  <div class="w3-display-middle">
+    <p class="princess w3-center w3-animate-top" style="font-size:30px; color:white; text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;">Tu veux une surprise ?</p>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="princess w3-large w3-center" style="color:white; text-shadow: 
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px  1px 0 #000,
+   1px  1px 0 #000;">pour ma princesse <3</p>
+  </div>
+</div>
+
+<div class="buttons">
+  <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+  <button class="btn" id="noButton" onclick="moveButton()">No</button>
+</div>
+
+<script>
+function nextPage() {
+  document.body.classList.add("fade-out");
+  setTimeout(() => {
+    window.location.href = "secret_word.html";
+  }, 500); // correspond à la durée du fade (1s)
+}
+
+function moveButton() {
+  const noBtn = document.getElementById("noButton");
+  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+  noBtn.style.position = "absolute";
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
+}
+</script>
+</body>
+</html>
