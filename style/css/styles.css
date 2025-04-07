@@ -5,13 +5,13 @@
 #noButton {
     position: absolute;
     margin-right: -100px;
-    margin-top: -465px;
+    margin-top: -365px;
 }
 
 #yesButton {
     position: absolute;
     margin-right: 150px;
-    margin-top: -465px;
+    margin-top: -365px;
     /* Smooth movement */
 }
 
